@@ -1,0 +1,12 @@
+sesame-rdftransform
+* Description
+Java program for quick execution of sparl on an rdf file.
+* Usage
+ java -jar rdftransform.jar -f file -q "query"
+* Arguments
+-f <filename> : load the given file into the repository
+-q "<sparql query>" : the query to execute
+-o <filename> : the output file to use (only the last one will be kept). If not present, will write to system out.
+-h : print this help message
+* Shorthand
+java -jar rdftransform.jar "query" file output
