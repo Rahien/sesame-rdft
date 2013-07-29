@@ -62,7 +62,7 @@ public class StoreInterface {
             Resource[] contexts = new Resource[]{contextURI};
 
             connection.clear(contexts);
-            connection.add(file, "http://lod2.eu/", RDFFormat.forFileName(filename,RDFFormat.RDFXML), contexts);
+            connection.add(file, "http://localhost/", RDFFormat.forFileName(filename,RDFFormat.RDFXML), contexts);
         }catch (RepositoryException e) {
             e.printStackTrace();
         } catch (RDFParseException e) {
